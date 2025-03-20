@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h2>📩 PANCHO FEST 📩</h2>
+        </div>
+        <div class="email-body">
+            <h1>¡Estás invitado a  mi reventón! 🎉</h1>
+            <img src="C:\Users\ameri\OneDrive\Escritorio\invitacionweb\pelo.jpg" alt="Evento" class="evento-img">
+            <p>📅 <strong>Fecha:</strong> 25 de marzo de 2025</p>
+            <p>📍 <strong>Lugar:</strong> <a href="https://maps.app.goo.gl/5Jva47EH57mbmE117" target="_blank">Ver Ubicación</a></p>
+            <p>⌛ <strong>Faltan <span id="contador"></span> para el evento</strong></p>
+            
+            <button id="mostrarFormulario">✅ Confirmar Asistencia</button>
+
+            <form action="mailto:vallejo20mil@gmail.com" method="post" enctype="text/plain">
+               <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" required><br><br>
+
+             <label for="asistencia">¿Vas a asistir?</label><br>
+             <input type="radio" id="si" name="asistencia" value="Sí" required>
+             <label for="si">Sí</label><br>
+             <input type="radio" id="no" name="asistencia" value="No" required>
+             <label for="no">No</label><br><br>
+
+               <input type="submit" value="Confirmar asistencia">
+           </form>
+
+            <audio id="musica" controls autoplay loop>
+                <source src="C:\Users\ameri\OneDrive\Escritorio\invitacionweb\FIFTY FIFTY - Cupid (Twin Version) (Lyrics).mp4"
+                 type="video/mp4">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
+        <div class="email-footer">
+            <p>Espero que no faltes, si faltas no va a ser nada SIGMA de tu parte! 💌</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
